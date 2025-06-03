@@ -1,0 +1,267 @@
+/* ====== ESTILOS BASE ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #111;
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+h1, h2, h3, h4 {
+    color: #f85f36;
+    text-transform: uppercase;
+}
+
+h3 {
+    text-align: center;
+    margin: 2rem 0 1rem;
+    font-size: 2rem;
+}
+
+/* ====== HEADER ====== */
+.header {
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #f85f36;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.nav-list a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #f85f36;
+}
+
+.btn-reserva {
+    background: #f85f36;
+    color: white;
+    border: none;
+    padding: 0.6rem 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ====== HERO ====== */
+.hero {
+    background: url('img/57chevy.png');
+    background-size: cover;
+    background-position: center;
+    height: 110vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2rem;
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+}
+
+.hero-content p {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+}
+
+.cta {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.btn-main, .btn-alt {
+    padding: 0.7rem 1.2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-main {
+    background: #f85f36;
+    color: #fff;
+}
+
+.btn-alt {
+    background: #fff;
+    color: #000;
+}
+
+/* ====== SECCIONES ====== */
+.seccion {
+    padding: 3rem 1rem;
+}
+
+.light {
+    background-color: #1c1c1c;
+}
+
+.dark {
+    background-color: #0d0d0d;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1.5rem;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 1rem;
+}
+
+.card {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h4 {
+    color: #f85f36;
+    margin-bottom: 0.5rem;
+}
+
+/* ====== CONTACTO ====== */
+.contacto-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-radius: 5px;
+    background: #333;
+    color: #fff;
+}
+
+form button {
+    background: #f85f36;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* ====== FOOTER ====== */
+.footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #000;
+    color: #aaa;
+    font-size: 0.9rem;
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem;
+    }
+    .nav-list {
+        gap: 1rem;
+    }
+    .hero-content h2 {
+        font-size: 2.2rem;
+    }
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+    .contacto-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 0.5rem;
+    }
+    .logo {
+        font-size: 1.3rem;
+    }
+    .nav-list {
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        align-items: flex-start;
+    }
+    .hero {
+        height: 60vh;
+        min-height: 350px;
+    }
+    .overlay {
+        padding: 1rem;
+        max-width: 100%;
+    }
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    .cards {
+        grid-template-columns: 1fr;
+    }
+    .seccion {
+        padding: 1.5rem 0.5rem;
+    }
+}

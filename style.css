@@ -41,6 +41,10 @@ h3 {
     top: 0;
     z-index: 1000;
     width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    justify-content: space-between;
 }
 
 .logo {
@@ -87,7 +91,8 @@ h3 {
 /* ====== HERO ====== */
 .hero {
     background: url('img/57chevy.png');
-    background-size: cover;
+    background-size: 1000px  100%, cover;
+    background-repeat: no-repeat;
     background-position: center;
     height: 110vh;
     position: relative;

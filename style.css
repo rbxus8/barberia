@@ -36,7 +36,7 @@ h3 {
 
 /* ====== HEADER ====== */
 .header {
-    background: #000;
+    background: #ffffffe7;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -46,13 +46,16 @@ h3 {
 .logo {
     font-size: 1.8rem;
     font-weight: bold;
-    color: #f85f36;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 1rem;
+}
+
+.logo-container a{
+    color: #000;
 }
 
 .nav-list {
@@ -63,7 +66,7 @@ h3 {
 }
 
 .nav-list a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
     transition: color 0.3s ease;
 }

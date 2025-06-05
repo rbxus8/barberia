@@ -163,6 +163,11 @@ h3 {
     padding: 2em;
     gap: 3em;
     text-align: center;
+    flex-wrap: wrap ;
+}
+
+.identidad-contenido aside{
+    max-width: 300px;
 }
 
 /* ====== SECCIONES ====== */

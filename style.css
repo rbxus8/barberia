@@ -143,6 +143,28 @@ h3 {
     color: #000;
 }
 
+
+/*identidad-quienes-container*/
+
+.identidad-quienes-container{
+    background-color: #33333300;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem; ;
+    
+}
+
+.identidad-contenido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #2d292823;
+    width: 60%;
+    padding: 2em;
+    gap: 3em;
+    text-align: center;
+}
+
 /* ====== SECCIONES ====== */
 .seccion {
     padding: 3rem 1rem;
